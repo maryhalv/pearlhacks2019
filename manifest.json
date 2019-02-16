@@ -8,7 +8,7 @@
   "browser_action": {
     "default_icon": "remember.png",
     "default_title": "remember",
-	  "default_popup": "newtab.html"
+	  "default_popup": "chrome-extension://jggjnmecednkhllcmdmckebideogiimh/newtab.html"
   },
 
   "person": {
@@ -19,7 +19,7 @@
   },
 
   "chrome_url_overrides": {
-      "newtab": "newtab.html"
+      "newtab": "chrome-extension://jggjnmecednkhllcmdmckebideogiimh/newtab.html"
   },
 
   "permissions": ["activeTab"]
