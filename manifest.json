@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "clarify",
+  "description": "Google Chrome Extension to aid those with visual impairments, such as visual impairments and dyslexia, to be able to read content on the internet.",
+  "version": "1",
+  "author": "Cassidy Soutter, Mary Halvorsen, Selina Zhang, Jessica Lynch",
+  "browser_action": {
+    "default_icon": "clarify_logo.png",
+    "default_title": "clarify"
+  },
+  "permissions": ["activeTab"]
+}
