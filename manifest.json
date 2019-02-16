@@ -5,7 +5,7 @@
   "version": "1",
   "author": "Cassidy Soutter, Mary Halvorsen, Selina Zhang, Jessica Lynch",
   "browser_action": {
-    "default_icon": "remember-01.png",
+    "default_icon": "remember.png",
     "default_title": "remember",
     "default_popup": "popup.html"
   },
