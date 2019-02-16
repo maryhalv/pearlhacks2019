@@ -1,6 +1,6 @@
 
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "remember",
   "description": "Google Chrome Extension to aid those suffering with Alzheimer's and memory loss to remember daily tasks and past/upcoming activies.",
   "version": "1",
