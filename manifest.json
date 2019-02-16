@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "clarify",
-  "description": "Google Chrome Extension to aid those with visual impairments, such as visual impairments and dyslexia, to be able to read content on the internet.",
+  "name": "remember",
+  "description": "Google Chrome Extension to aid those suffering with Alzheimer's and memory loss to remember daily tasks and past/upcoming activies.",
   "version": "1",
   "author": "Cassidy Soutter, Mary Halvorsen, Selina Zhang, Jessica Lynch",
   "browser_action": {
-    "default_icon": "clarify_logo.png",
+    "default_icon": "remember.png",
     "default_title": "clarify",
     "default_popup": "popup.html"
   },
