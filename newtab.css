@@ -1,6 +1,6 @@
 /*header style*/
 .big-container{
-    background-image: url("background_pics/galaxy.jpg");
+    background-image: url("background_pics/mountains.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -77,7 +77,7 @@ body{
 }
 
 .close-btn{
-  
+
   top: 21px;
   right: 50px;
   cursor: pointer;
@@ -91,5 +91,3 @@ body{
   text-transform: uppercase;
   font-weight: bold;
 }
-
-
