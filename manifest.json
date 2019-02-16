@@ -7,8 +7,7 @@
   "author": "Cassidy Soutter, Mary Halvorsen, Selina Zhang, Jessica Lynch",
   "browser_action": {
     "default_icon": "remember.png",
-    "default_title": "remember",
-	  "default_popup": "chrome-extension://jggjnmecednkhllcmdmckebideogiimh/newtab.html"
+    "default_title": "remember"
   },
 
   "person": {
@@ -19,7 +18,7 @@
   },
 
   "chrome_url_overrides": {
-      "newtab": "chrome-extension://jggjnmecednkhllcmdmckebideogiimh/newtab.html"
+      "newtab": "newtab.html"
   },
 
   "permissions": ["activeTab"]
