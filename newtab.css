@@ -1,0 +1,7 @@
+/*header style*/
+.header{
+    background-image: url('../background_pics/canyon.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+   }
