@@ -11,8 +11,7 @@ function startRemember(){
 
     console.log('reached');
 
-    $('body').append(getTime());
-    $('body').append(getDate());
+    $('body').append(startTime());
 
     $('.questions').append("<p>What is your first name?</p>");
     $('body').append("<form><input id='first' type = 'text'></input></form>");
@@ -52,22 +51,33 @@ function startRemember(){
 
 
 }
+// time (clock and date)
+function startTime() {
+    var today = new Date();
+    var hr = today.getHours();
+    var min = today.getMinutes();
+    ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
+    hr = (hr == 0) ? 12 : hr;
+    hr = (hr > 12) ? hr - 12 : hr;
+    //Add a zero in front of numbers<10
+    hr = checkTime(hr);
+    min = checkTime(min);
+    document.getElementById("clock").innerHTML = hr + ":" + min + ":" + ap;
 
-fucntion getDate() {
-  var m = new Date();
-  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  document.getElementById("demo").innerHTML = months[m.getMonth()];
-  var d = new Date();
-  document.getElementById("demo").innerHTML = d.getDay();
-  var y = new Date();
-  document.getElementById("demo").innerHTML = y.getFullYear();
-  return (m + " " + d + ", " + y);
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var curWeekDay = days[today.getDay()];
+    var curDay = today.getDate();
+    var curMonth = months[today.getMonth()];
+    var curYear = today.getFullYear();
+    var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
+    document.getElementById("date").innerHTML = date;
+
+    var time = setTimeout(function(){ startTime() }, 500);
 }
-
-function getTime() {
-  var hour = new Date();
-  document.getElementById("demo").innerHTML = hour.getHours();
-  var minutes = new Date();
-  document.getElementById("demo").innerHTML = minutes.getMinutes();
-  return (hour + ":" + minutes);
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
 }
