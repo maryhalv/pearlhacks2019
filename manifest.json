@@ -6,7 +6,11 @@
   "author": "Cassidy Soutter, Mary Halvorsen, Selina Zhang, Jessica Lynch",
   "browser_action": {
     "default_icon": "clarify_logo.png",
-    "default_title": "clarify"
+    "default_title": "clarify",
+    "default_popup": "popup.html"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
   },
   "permissions": ["activeTab"]
 }
