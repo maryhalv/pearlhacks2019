@@ -14,7 +14,8 @@
 "person": {
   "firstname": "empty",
   "lastname": "empty",
-  "birthday": "empty"
+  "birthday": "empty",
+  "location": "empty"
 },
   "chrome_url_overrides": {
     "newtab": "newtab.html"
