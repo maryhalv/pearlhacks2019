@@ -8,17 +8,19 @@
   "browser_action": {
     "default_icon": "remember.png",
     "default_title": "remember",
-	"default_popup": "newtab.html"
+	  "default_popup": "newtab.html"
   },
 
-"person": {
-  "firstname": "empty",
-  "lastname": "empty",
-  "birthday": "empty",
-  "location": "empty"
-},
-  "chrome_url_overrides": {
-    "newtab": "newtab.html"
+  "person": {
+    "firstname": "empty",
+    "lastname": "empty",
+    "birthday": "empty",
+    "location": "empty"
   },
+
+  "chrome_url_overrides": {
+      "newtab": "newtab.html"
+  },
+
   "permissions": ["activeTab"]
 }
