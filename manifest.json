@@ -1,3 +1,4 @@
+
 {
   "manifest_version": 2,
   "name": "remember",
@@ -6,9 +7,15 @@
   "author": "Cassidy Soutter, Mary Halvorsen, Selina Zhang, Jessica Lynch",
   "browser_action": {
     "default_icon": "remember.png",
-    "default_title": "remember",
-    "default_popup": "popup.html"
+    "default_title": "remember", 
+	"default_popup": "popup.html"
   },
+
+"person": {
+  "firstname": "empty",
+  "lastname": "empty",
+  "birthday": "empty"
+}, 
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
