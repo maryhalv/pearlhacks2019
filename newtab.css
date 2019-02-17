@@ -250,7 +250,7 @@ dl dt.checked::before {
 .input2 {
   border: 3px solid #fff;
   border-radius: 50px;
-  width: 100%;
+  width: 75%;
   /*padding: 10px;*/
   padding: 15px /*30px*/;
   float: left;
@@ -298,9 +298,10 @@ dl dt.checked::before {
 }
 
 .inputContact {
+  position: relative;
   border: 3px solid #fff;
   border-radius: 50px;
-  width: 100%;
+  width: 75%;
   /*padding: 10px;*/
   padding: 15px /*30px*/;
   float: left;
@@ -317,10 +318,10 @@ dl dt.checked::before {
 
 .contactHeader {
   color: white;
-
 }
 
 .addContactBtn {
+  position:relative;
   padding: 10px;
   width: 7%;
   background: #fff;
@@ -339,7 +340,7 @@ dl dt.checked::before {
   width: 120px;
   height: 55px;
   margin: 10px;
-  top: 21px;
+  top: 0px;
   right: 50px;
   margin-left: 10px;
   display: inline-block;

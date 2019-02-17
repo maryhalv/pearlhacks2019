@@ -8,9 +8,9 @@ function getNames() {
     var place;
 
     var today = new Date();
-    today.toDateString();
+    var dateString = today.toDateString();
     $('#age').empty();
-    $('#age').append('Today is ' + today);
+    $('#age').append('Today is ' + dateString);
       chrome.storage.local.get(['firstname'], function(result) {
          first = result;
           console.log('Value currently is ' + result.firstname);
