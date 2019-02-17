@@ -8,9 +8,10 @@
     height:175%;
    }
    #name{
-       padding-top: 25%;
+       padding-top: 15%;
        text-align: center;
        color: white;
+       font-size: 75px;
    }
    #age{
        color: white;
