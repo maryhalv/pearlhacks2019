@@ -20,6 +20,9 @@ function startRemember(){
     $('body').append("<p>What is your birthdate?</p>");
     $('body').append("<div class = 'form-group'><form><input id='last' type = 'text'></input></form></div>");
     
+        $('body').append("<p>Who is your Emergency Contact?</p>");
+    $('body').append("<div class = 'form-group'><form><input id='last' type = 'text'></input></form></div>");
+    
     // "firstname": document.getElementById('first').value,
     //"lastname": document.getElementById('last').value
     
@@ -88,7 +91,7 @@ function checkTime(i) {
     return i;
 }
 
-fucntion getDate() {
+function getDate() {
   var m = new Date();
   var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   document.getElementById("demo").innerHTML = months[m.getMonth()];
