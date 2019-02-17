@@ -7,7 +7,6 @@ function getNames() {
     var first;
       chrome.storage.local.get(['firstname'], function(result) {
          first = result;
-    
           console.log('Value currently is ' + result.firstname);
         });
       
@@ -15,7 +14,13 @@ function getNames() {
             $('#name').empty();
             $('#name').append("Hello, " + first.firstname + " " + result.lastname);
           //document.getElementById('name').value = "Hello " +  first + " " + result;
-    
           console.log('Value currently is ' + result.lastname);
         });
+      
+      chrome.storage.local.get(['num'], function(result) {
+        
+            $('.info').append("<h4 id = 'number'>Feeling scared? Call " + result.num + "</h4>");
+          console.log('Emergency contact number is ' + result.num);
+        });
+      
 }
