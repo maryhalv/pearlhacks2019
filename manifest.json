@@ -9,6 +9,7 @@
     "default_title": "remember"
   },
 
+
   "person": {
     "firstname": "empty",
     "lastname": "empty",
@@ -16,6 +17,11 @@
     "location": "empty"
   },
 
+"background": {
+   "scripts": ["background.js"],
+   "persistent": false
+ },
+ 
   "chrome_url_overrides": {
       "newtab": "index.html"
   },
