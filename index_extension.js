@@ -2,21 +2,22 @@ var firstname;
 var lastname;
 
 $(document).ready(function () {
+            /*if(chrome.storage.local.hasOwnProperty('firstname')) {
+                        console.log('checked');
+                        window.location.href = 'newtab.html';
+            } else {
+                        startRemember();
+            }*/
             chrome.storage.local.get(['firstname'], function(result) {
-                                 if(result.firstname !== null) {
-                                    console.log(result.firstname);
+                                 if(result.hasOwnProperty('firstname')) {
+                                         console.log('firstname is' + result.firstname);
                                      window.location.href = 'newtab.html';
                                  }  else {
-                                     startRemember();
+                                  startRemember();
                                  }
-                        
-                        
-     /* if(result.localeCompare('empty') === 0 ) {
-            startRemember();
-      } else {
-            window.location.href = 'newtab.html';
-      }*/
-        });
+            
+        }); 
+            
         });
 
 function startRemember(){
