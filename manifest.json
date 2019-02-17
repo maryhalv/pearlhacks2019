@@ -4,7 +4,6 @@
   "description": "Google Chrome Extension to aid those suffering with Alzheimer's and memory loss to remember daily tasks and past/upcoming activies.",
   "version": "1",
   "author": "Cassidy Soutter, Mary Halvorsen, Selina Zhang, Jessica Lynch",
-
   "browser_action": {
     "default_icon": "remember.png",
     "default_title": "remember"
@@ -17,11 +16,6 @@
     "lastname": "empty",
     "birthday": "empty",
     "location": "empty"
-  },
-
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
   },
 
   "chrome_url_overrides": {
