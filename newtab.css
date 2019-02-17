@@ -86,6 +86,7 @@ body{
 
 
 #input{
+  float: center;
   width: 400px;
   height: 55px;
   border: 3px solid #fff;
@@ -124,9 +125,11 @@ body{
   text-transform: uppercase;
   font-weight: bold;
   margin-left: 10px;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 125px;
   /*  padding: 10px;
     width: 7%;
     background: #fff;
@@ -306,6 +309,7 @@ dl dt.checked::before {
 }
 
 .addContactBtn {
+  margin-left: 100px;
   padding: 10px;
   width: 7%;
   background: #fff;
