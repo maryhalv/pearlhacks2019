@@ -7,16 +7,14 @@ function getNames() {
     var first;
     var place;
 
+    //$('#closebtn').addEventListener("click", addToDo);
+    
+     document.getElementById("closebtn").addEventListener("click", addToDo);
+     
     var today = new Date();
-<<<<<<< HEAD
-    var dateString = today.toDateString();
+    today.toDateString();
     $('#age').empty();
-    $('#age').append('Today is ' + dateString);
-=======
-    var todayString = today.toDateString();
-    $('#age').empty();
-    $('#age').append('Today is ' + todayString);
->>>>>>> 816269e3be111a1985925d780f71f4032a6d893c
+    $('#age').append('Today is ' + today);
       chrome.storage.local.get(['firstname'], function(result) {
          first = result;
           console.log('Value currently is ' + result.firstname);
@@ -48,4 +46,16 @@ function getNames() {
           console.log('Emergency contact number is ' + result.num);
         });
 
+}
+
+function addToDo() {
+    $('#myUL').append('<dt>' + document.getElementById('input').value +' </dt>');
+    
+   /* chrome.storage.local.set({listitems: document.getElementById('input2').value}, function() {
+          console.log('Value is set to ' + document.getElementById('first').value);
+        }); */
+}
+
+function removeToDo () {
+    
 }
