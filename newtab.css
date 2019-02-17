@@ -256,7 +256,29 @@ dl dt.checked::before {
 .input2 {
   border: 3px solid #fff;
   border-radius: 50px;
-  width: 75%;
+  width: 65%;
+  /*padding: 10px;*/
+  padding: 15px /*30px*/;
+  float: left;
+  height: 55px;
+  outline: none;
+  font-size: 15px;
+  background: rgba(158, 172, 193, 0.8);
+  color:skyblue;
+  align-items: center;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.addContactBtn:hover{
+  background-color: #bbb;
+}
+
+.inputContact {
+  position: relative;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  width: 60%;
   /*padding: 10px;*/
   padding: 15px /*30px*/;
   float: left;
@@ -270,63 +292,11 @@ dl dt.checked::before {
   margin-top: 10px;
 }
 
-/* Style the "Add" button */
-.addBtn {
-  padding: 10px;
-  width: 7%;
-  background: #fff;
-  color:skyblue;
-  float: right;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 18px;
-  cursor: pointer;
-  transition: 0.3s;
-  border: 0px;
-  border-radius: 50px;
-  outline: none;
-  cursor: pointer;
-  width: 120px;
-  height: 55px;
-  margin: 10px;
-  top: 21px;
-  right: 50px;
-  margin-left: 10px;
-  display: inline-block;
-}
-
-.addBtn:hover {
-  background-color: #bbb;
-}
-.addContactBtn:hover{
-  background-color: #bbb;
-}
-
-.inputContact {
-  position: relative;
-  border: 3px solid #fff;
-  border-radius: 50px;
-  width: 75%;
-  /*padding: 10px;*/
-  padding: 15px /*30px*/;
-  float: left;
-  height: 55px;
-  outline: none;
-  font-size: 18px;
-  background: #9eacc1;
-  opacity: 0.80;
-  color:skyblue;
-  align-items: center;
-  display: inline-block;
-  margin-top: 10px;
-}
-
 .contactHeader {
   color: white;
 }
 
-.addContactBtn {
+#addContactBtn {
   position:relative;
   padding: 10px;
   width: 7%;
@@ -336,7 +306,7 @@ dl dt.checked::before {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
   transition: 0.3s;
   border: 0px;
@@ -347,7 +317,13 @@ dl dt.checked::before {
   height: 55px;
   margin: 10px;
   top: 0px;
-  right: 50px;
+  right: 0px;
   margin-left: 10px;
   display: inline-block;
+}
+
+#contactList {
+  font-size 18;
+  font-weight: bold;
+  color: white;
 }
