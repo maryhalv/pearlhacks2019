@@ -32,6 +32,12 @@ function startRemember(){
     $('body').append("<p>What is your last name?</p>");
     $('body').append("<div class = 'form-group'><form><input id='last' type = 'text'></input></form></div>");
     
+    $('body').append("<p>Where were you born?</p>");
+    $('body').append("<div class = 'form-group'><form><input id='place' type = 'text'></input></form></div>");
+    
+     $('body').append("<p>Where year were you born?</p>");
+    $('body').append("<div class = 'form-group'><form><input id='year' type = 'text'></input></form></div>");
+    
    $('body').append("<p>What is your Emergency Contact number?</p>");
     $('body').append("<div class = 'form-group'><form><input id='num' type = 'text'></input></form></div>");
     
@@ -62,6 +68,18 @@ function assignFields() {
      if(document.getElementById('last').value !== null ) {
      chrome.storage.local.set({lastname: document.getElementById('last').value}, function() {
           console.log('Value is set to ' + document.getElementById('last').value);
+        });
+     }
+     
+          if(document.getElementById('place').value !== null ) {
+     chrome.storage.local.set({place: document.getElementById('place').value}, function() {
+          console.log('Value is set to ' + document.getElementById('place').value);
+        });
+     }
+     
+       if(document.getElementById('year').value !== null ) {
+     chrome.storage.local.set({year: document.getElementById('year').value}, function() {
+          console.log('Value is set to ' + document.getElementById('year').value);
         });
      }
      
