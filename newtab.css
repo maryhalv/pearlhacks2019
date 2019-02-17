@@ -16,6 +16,10 @@
        color: white;
        text-align: center;
    }
+   #number {
+       color: white;
+       text-align: center;
+   }
    .overlay{
     position: absolute;
     min-height: 100%;
