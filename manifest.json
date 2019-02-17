@@ -1,4 +1,3 @@
-
 {
   "manifest_version": 2,
   "name": "remember",
@@ -17,13 +16,9 @@
     "location": "empty"
   },
 
-  "background": {
-    "scripts": ["background.js"]
-  },
-
   "chrome_url_overrides": {
-      "newtab": "newtab.html"
+      "newtab": "index.html"
   },
 
-  "permissions": ["activeTab", "tabs"]
+  "permissions": ["activeTab", "tabs", "history"]
 }
