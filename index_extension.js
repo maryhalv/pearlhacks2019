@@ -26,7 +26,9 @@ function startRemember(){
     // "firstname": document.getElementById('first').value,
     //"lastname": document.getElementById('last').value
     
-    $('body').append("<button onclick = 'assignFields();'>Enter Information</button>");
+    $('body').append("<button id ='myButton'>Enter Information</button>");
+    
+    document.getElementById("myButton").addEventListener("click", assignFields);
     
 }
 
@@ -36,13 +38,13 @@ function assignFields() {
     
     console.log('reached');
     
-    /* chrome.storage.local.set({firstname: document.getElementById('first').value}, function() {
+     chrome.storage.local.set({firstname: document.getElementById('first').value}, function() {
           console.log('Value is set to ' + value);
         });
      
      chrome.storage.local.set({firstname: document.getElementById('last').value}, function() {
           console.log('Value is set to ' + value);
-        });*/
+        });
       
       
        /*$.ajax({
