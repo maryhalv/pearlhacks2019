@@ -6,10 +6,31 @@
   <title>New Tab</title>
   <link rel="icon" href="remember.ico" type="image/x-icon">
   <script src="jquery.min.js"></script>
+  <!--<script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script> -->
   <script type="text/javascript" src='newtab.js'></script>
   <link rel="stylesheet" type="text/css" href="newtab.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
+  <!--<div id="clockbox"></div>
+  <script type="text/javascript">
+    var tday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var tmonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    function GetClock() {
+      var d = new Date();
+      var nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate(), nyear = d.getFullYear();
+      var nhour = d.getHours(), nmin = d.getMinutes(), nsec = d.getSeconds(), ap;
+      if (nhour == 0) { ap = " AM"; nhour = 12; }
+      else if (nhour < 12) { ap = " AM"; }
+      else if (nhour == 12) { ap = " PM"; }
+      else if (nhour > 12) { ap = " PM"; nhour -= 12; }
+      if (nmin <= 9) nmin = "0" + nmin;
+      if (nsec <= 9) nsec = "0" + nsec;
+      var clocktext = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + ap + "";
+      document.getElementById('clockbox').innerHTML = clocktext;
+    }
+    GetClock();
+    setInterval(GetClock, 1000);
+  </script>-->
 </head>
 
 <body>
@@ -19,9 +40,9 @@
         <h1 id="name"> Hello, insert name </h1>
       </div>
       <div class="wrapper">
-        <input type="text" class="input" placeholder="Make a note to yourself">
+        <form><input type="text" id="input" placeholder="Make a note to yourself"></input></form>
         <!--<input type="button" value="GO" class="close-btn">-->
-        <span onclick="newElement()" class="close-btn">GO</span>
+        <button id="closebtn">GO</button>
       </div>
       <div class = 'info'>
         <h3 id="age"> You are x years old</h3>
@@ -31,8 +52,9 @@
       <div class="first">
         <div id="myDIV" class="header">
           <h2>My To Do List</h2>
-          <input type="text" class="input2" placeholder="What do you need to do?">
-          <span onclick="newElement()" id="addBtn">Add</span>
+          <!-- <form><input id='input 2' type = 'text'></input></form> -->
+           <input type="text" class="input2" placeholder="What do you need to do?">
+          <span onclick="newElement()" class="addBtn">Add</span>
           <dl id="myUL">
             <dt>Hit the gym</dt>
             <dt class="checked">Pay bills</dt>
@@ -48,7 +70,7 @@
         <div id="EmergencyContacts" class="contactHeader">
           <h2>My Emergency Contacts</h2>
           <input type="text" class="inputContact" placeholder="Who ya gonna call?">
-          <span onclick="newElement()" id="addContactBtn">Add</span>
+          <span onclick="addToDo();" class="addContactBtn">Add</span>
           <dl id="contactList"
             <dt> Ghost Busters</dt>
           </dl>
