@@ -9,18 +9,11 @@
     "default_title": "remember"
   },
 
- "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
-
   "person": {
     "firstname": "empty",
     "lastname": "empty",
     "birthday": "empty",
     "location": "empty"
-  },
-
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
   },
 
   "chrome_url_overrides": {

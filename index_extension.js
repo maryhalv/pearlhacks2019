@@ -32,17 +32,17 @@ function startRemember(){
 
 function assignFields() {
     
-    window.location.href = 'newtab.html';
+   window.location.href = 'newtab.html';
     
     console.log('reached');
     
-     chrome.storage.local.set({firstname: document.getElementById('first').value}, function() {
+    /* chrome.storage.local.set({firstname: document.getElementById('first').value}, function() {
           console.log('Value is set to ' + value);
         });
      
      chrome.storage.local.set({firstname: document.getElementById('last').value}, function() {
           console.log('Value is set to ' + value);
-        });
+        });*/
       
       
        /*$.ajax({
