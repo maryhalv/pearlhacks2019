@@ -8,8 +8,9 @@
     height:175%;
    }
    #name{
-       padding-top: 25%;
+       padding-top: 17%;
        text-align: center;
+       font-size: 70px;
        color: white;
    }
    #age{
@@ -56,14 +57,14 @@ body{
 .wrapper{
   position: absolute;
   top: 40%;
-  padding-top: 50%;
+  padding-top: 45%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
 
 .container{
   position: relative;
-  padding: 20px 80px;
+  padding: 20px;
 }
 
 .first {
@@ -324,7 +325,7 @@ dl dt.checked::before {
   width: 7%;
   background: #fff;
   color:skyblue;
-  float: left;
+  float: right;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
