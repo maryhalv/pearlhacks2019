@@ -29,6 +29,8 @@ function startRemember(){
 
 function assignFields() {
     
+    window.location.href = 'newtab.html';
+    
     console.log('reached');
     
      chrome.storage.local.set({firstname: document.getElementById('first').value}, function() {
@@ -38,6 +40,7 @@ function assignFields() {
      chrome.storage.local.set({firstname: document.getElementById('last').value}, function() {
           console.log('Value is set to ' + value);
         });
+      
       
        /*$.ajax({
             url: 'https://maryhalv.github.io/pearlhacks2019/manifest.json',
