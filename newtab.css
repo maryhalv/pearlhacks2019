@@ -79,7 +79,8 @@ body{
   width: 400px;
   height: 55px;
   border: 3px solid #fff;
-  background: transparent;
+  background: #9eacc1;
+  opacity: 0.80;
   padding: 15px 30px;
   border-radius: 50px;
   outline: none;
@@ -131,6 +132,7 @@ ul {
   padding-right: 10px;
   width: 45%;
   position:relative;
+  
   /*background-color: #666666;*/
 }
 
@@ -177,6 +179,7 @@ ul li.checked::before {
   transform: rotate(45deg);
   height: 15px;
   width: 7px;
+  opacity: 0.5
 }
 
 /* Style the close button */
@@ -218,7 +221,8 @@ ul li.checked::before {
   height: 55px;
   outline: none;
   font-size: 18px;
-  background: transparent;
+  background: #9eacc1;
+  opacity: 0.80;
   color:skyblue;
   align-items: center;
   display: inline-block;

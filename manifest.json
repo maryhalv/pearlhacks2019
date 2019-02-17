@@ -23,7 +23,7 @@
  },
 
   "chrome_url_overrides": {
-      "newtab": "index.html"
+      "newtab": "newtab.html"
   },
 
   "permissions": ["activeTab", "tabs", "history", "storage"]
