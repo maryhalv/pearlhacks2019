@@ -79,7 +79,8 @@ body{
   width: 400px;
   height: 55px;
   border: 3px solid #fff;
-  background: transparent;
+  background: #9eacc1;
+  opacity: 0.80;
   padding: 15px 30px;
   border-radius: 50px;
   outline: none;
@@ -125,17 +126,19 @@ body{
 }
 
 /* Remove margins and padding from the list */
-ul {
+dl {
   margin: 0;
   padding-left: 10px;
   padding-right: 10px;
   width: 45%;
   position:relative;
+  border-color: black;
+  border-radius: 3px;
   /*background-color: #666666;*/
 }
 
 /* Style the list items */
-ul li {
+dl dt {
   cursor: pointer;
   position: relative;
   background:transparent;
@@ -154,19 +157,19 @@ ul li {
 
 
 /* Darker background-color on hover */
-ul li:hover {
+/*dl dt:hover {
   background: #ddd;
-}
+}*/
 
 /* When clicked on, add a background color and strike out text */
-ul li.checked {
+dl dt.checked {
   background: transparent;
   color: #fff;
   text-decoration: line-through;
 }
 
 /* Add a "checked" mark when clicked on */
-ul li.checked::before {
+dl dt.checked::before {
   content: '';
   position: absolute;
   border-color: #fff;
@@ -177,6 +180,7 @@ ul li.checked::before {
   transform: rotate(45deg);
   height: 15px;
   width: 7px;
+  opacity: 0.5
 }
 
 /* Style the close button */
@@ -218,7 +222,8 @@ ul li.checked::before {
   height: 55px;
   outline: none;
   font-size: 18px;
-  background: transparent;
+  background: #9eacc1;
+  opacity: 0.80;
   color:skyblue;
   align-items: center;
   display: inline-block;

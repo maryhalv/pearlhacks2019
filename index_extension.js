@@ -2,9 +2,21 @@ var firstname;
 var lastname;
 
 $(document).ready(function () {
-            
+            chrome.storage.local.get(['firstname'], function(result) {
+                                 if(result.firstname !== null) {
+                                    console.log(result.firstname);
+                                     window.location.href = 'newtab.html';
+                                 }  else {
+                                     startRemember();
+                                 }
+                        
+                        
+     /* if(result.localeCompare('empty') === 0 ) {
             startRemember();
-            
+      } else {
+            window.location.href = 'newtab.html';
+      }*/
+        });
         });
 
 function startRemember(){
@@ -34,19 +46,18 @@ function startRemember(){
 
 function assignFields() {
     
-   window.location.href = 'newtab.html';
     
     console.log('reached');
     
      chrome.storage.local.set({firstname: document.getElementById('first').value}, function() {
-          console.log('Value is set to ' + value);
+          console.log('Value is set to ' + document.getElementById('first').value);
         });
      
-     chrome.storage.local.set({firstname: document.getElementById('last').value}, function() {
-          console.log('Value is set to ' + value);
+     chrome.storage.local.set({lastname: document.getElementById('last').value}, function() {
+          console.log('Value is set to ' + document.getElementById('last').value);
         });
       
-      
+        window.location.href = 'newtab.html';
        /*$.ajax({
             url: 'https://maryhalv.github.io/pearlhacks2019/manifest.json',
   type: 'GET',
