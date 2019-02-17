@@ -17,14 +17,14 @@
     "location": "empty"
   },
 
-  "background": {
-     "scripts": ["background.js"],
-     "persistent": false
-  },
+"background": {
+   "scripts": ["background.js"],
+   "persistent": false
+ },
 
   "chrome_url_overrides": {
       "newtab": "index.html"
   },
 
-  "permissions": ["activeTab", "tabs", "history"]
+  "permissions": ["activeTab", "tabs", "history", "storage"]
 }
