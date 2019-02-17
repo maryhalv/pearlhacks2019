@@ -32,7 +32,7 @@ function startRemember(){
 
 function assignFields() {
     
-    window.location.href = 'newtab.html';
+  //  window.location.href = 'newtab.html';
     
     console.log('reached');
     
